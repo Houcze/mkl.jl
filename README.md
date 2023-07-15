@@ -2,21 +2,21 @@
 Intel MKL for Julia (build for homework usage)
 
 * Usage
-Download this codebase to the current path. If you're using Ubuntu (as of July 15, 2023, the Ubuntu version on Colab), you should rename `lib.ubuntu2004` to `lib`:
+Clone this repo to your current path. If you're using Ubuntu 20.04 (as of July 15, 2023, the Ubuntu version on Colab), you should rename `lib.ubuntu2004` to `lib`:
 ```sh
 mv lib.ubuntu2004 lib
 ```
 Run the following command:
 ```sh
-. set ld_library_path.sh
+. set_ld_library_path.sh
 ```
-This will add `lib` to the `LD_LIBRARY_PATH`. 
+This will add `lib` to `LD_LIBRARY_PATH`. 
 
 Next, run:
 ```sh
 julia test_mkl.jl
 ```
-to check if you can use the precompiled dynamic library. 
+to check if you can use the precompiled shared library. 
 
 If the installation is successful, you will see the following output:
 ```

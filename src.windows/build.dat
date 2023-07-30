@@ -1,0 +1,1 @@
+cl /EHsc /LD mkl_.cpp /link /LIBPATH:"C:\Program Files (x86)\Intel\oneAPI\mkl\2022.0.0\lib" mkl_rt.lib /OUT:libjulia.dll
